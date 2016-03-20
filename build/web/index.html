@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="refresh" content="20">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/gpbutton.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <script src="https://apis.google.com/js/client:platform.js?onload=render" async defer></script>
+    <script src="js/facebooklogin.js"></script>
+    <script src="js/googlepluslogin.js"></script>
+    
+    <script>
+        function oncheck() {
+            if (document.getElementById("query").value == "") {
+                alert("Please enter the key word of people you want to search.");
+                return;
+            }
+            var facebook = document.getElementById("facebook");
+            var google = document.getElementById("google");
+            if (facebook.firstChild) {
+                if (google.firstChild) {
+                    var query = document.getElementById("query").value;
+                    sessionStorage.setItem("query", query);
+                    self.location = 'search.html';
+                } else {
+                    alert("Please sign in your google account.");
+                }
+            } else {
+                if (google.firstChild) {
+                    alert("Please sign in your facebook account.");
+                } else {
+                    alert("Please sign in your facebook and google account.");
+                }
+            }
+        }
+    </script>
+    <title>HOME</title>
+</head>
+<body>
+    <div class="container"> 
+        <div id="buttons">  
+            <div class=" fbbtn">
+                <fb:login-button autologoutlink="true" perms="user_likes" size="large" onlogin="checkLoginState();" ></fb:login-button>
+            </div>
+            <div id="gSignInWrapper">
+                <div id="customBtn" class="gpbtn">
+                    <input type="image" src="image/signin.png" height= 25 width=75/>
+                </div>
+            </div>
+            <div id="glogout" class="hide gpbtn" >
+                <input type="image" src="image/signout.png" height= 25 width=75 onclick="logout()" />
+            </div>
+        </div><!--/#buttons-->
+        <div id="welcome">
+            <div id="facebook"></div>
+            <div id="google"></div>
+        </div><!--/#welcome-->
+
+        <div id="logo">
+            <img src="image/bg.png" width="160px" alt="fb_gp">
+        </div><!--/#img-->
+
+        <div class="search">
+            <input id="query" type="text" />
+            <input type="image" class="inline" src="image/search.png" width="23px" alt="submit" onclick="oncheck()">
+        </div>
+    </div><!--/#container-->
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+<?
+    $client = new Google_Client();
+    $client->setDeveloperKey("AIzaSyDP-bcqMd3WmS94A7oH8B35ZjTuOWFtfYM");
+    $plus = new Google_PlusService($client);
+    $activities = $plus->activities->listActivities("+GooglePlusDevelopers", "public");
+?>
+<body>
+    <pre><? echo print_r($activities);?></pre></body>
+</html>

@@ -1,0 +1,137 @@
+.search{
+    position: relative;
+    padding-top: 90px;
+}
+#resultbox{
+    margin: 30px 0 0 0;
+    width: 70%;
+}
+#result{
+    border-radius: 5px;
+    text-align: center;
+}
+.result{
+    width: 200px;
+    border-radius: 5px;
+    border: 1px;
+    padding-top: 5px;
+}
+.inline{
+    display: inline-block;
+}
+
+#source{
+    position: relative;
+    top: 30px;
+    left: -40px;
+}
+#source img{
+    position: relative;
+    height: 25px;
+    top: 5px;
+    padding-left: 15px;
+}
+.panel {
+    margin: 10px ;
+    display: inline-block;
+    width: inherit;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}
+.img-rounded {
+    border-radius: 10px;
+}
+.panel-footer {
+    padding: 10px 15px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.title{
+    font-size: 0.9em;
+    vertical-align: middle;
+}
+.text-info {
+    color: #31708f;
+    font-size: 0.8em;
+}
+.panel-default a img{
+    position: relative;
+    left: -20px;
+    width: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.panel-default {
+    width:200px;
+    text-align: center;
+    border-color: #ddd;
+}
+.panel-headingfb {
+    vertical-align: middle;
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    text-align: center;
+}
+.panel-default > .panel-headingfb {
+    color: #fff;
+    background-color: #3b5998;
+    border-color: #ddd;
+}
+.panel-default > .panel-headingfb + .panel-collapse > .panel-body {
+    border-top-color: #ddd;
+}
+
+.panel-headinggp {
+    vertical-align: center;
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    text-align: center;
+}
+.panel-default > .panel-headinggp {
+    color: #fff;
+    background-color: #dd4b39;
+    border-color: #ddd;
+}
+.panel-default > .panel-headinggp + .panel-collapse > .panel-body {
+    border-top-color: #ddd;
+}
+#slider {
+    padding-right: 30px;
+    width: 360px;
+    height: 17px;
+    margin: auto;
+    position: relative;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+}
+
+#slider .bar {
+    width: 358px;
+    height: 5px;
+    position: relative;
+    top: -4px;
+    left: 4px;  
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+}
+
+#weight img{
+
+    width: 25px;
+}
+#weight{
+    padding-top: 30px;
+    margin:auto;
+}

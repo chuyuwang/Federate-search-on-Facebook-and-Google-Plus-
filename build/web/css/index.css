@@ -1,0 +1,114 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+  Created on : Apr 11, 2015, 3:58:29 PM
+  Author     : chuyuwang
+*/
+.container{
+    text-align: center; 
+}
+
+#gSignInWrapper
+{
+    width: 70px;
+    display: inline;
+}
+
+#glogout{
+
+}
+.hide{
+    display: none;
+}
+.gpbtn{
+    position: absolute;
+    top: 5px;
+    left:120px;
+}
+.fbbtn{
+    position: absolute;
+    top: 5px;
+    left: 30px ;
+}
+#buttons{
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    width: 200px;
+}
+
+#welcome{
+    position: absolute;
+    text-align: left;
+    top:5px;
+    left: 5px;
+}
+#logo{
+    text-align: center;
+    margin-top: 150px;;
+}
+.inline{
+    display: inline;
+}
+input[type=text]{
+    height:25px;
+    width: 40%;
+    border-radius: 10px;
+    font-size: 1em;
+}
+input:-webkit-input-placeholder {
+    font-size: 1em;
+    font-family: serif;
+}
+
+#customBtn
+{
+    position: absolute;
+    top: 5px;
+    left:120px;
+
+}
+#customBtn {
+    /*      display: inline-block;*/
+    color: white;
+    width: 75px;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+#customBtn:hover {
+    cursor: hand;
+}
+
+span.icon {
+    background: url('../image/gpbutton.png') transparent no-repeat;
+    background-size: 25px 25px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+}
+span.buttonText {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 35px;
+    font-size: 10px;
+    font-weight: bold;
+    /* Use the Roboto font that is loaded in the <head> */
+    font-family: 'Roboto',arial,sans-serif;
+}
+#indexsource{
+    position: relative;
+}
+#indexsource img{
+    position: relative;
+    height: 25px;
+    top: 5px;
+    padding-left: 5px;
+}
+body{
+    background-color: whitesmoke;
+}
+
